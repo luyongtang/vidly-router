@@ -16,12 +16,12 @@ class App extends Component {
         <NavBar />
         <div className="content ">
           <Switch>
-            // when using Switch, the order of the routes matters (specific ->
-            generic)
+            {/* when using Switch, the order of the routes matters (specific ->
+            generic) */}
+            <Route exact path="/" component={Home} />
             <Route path="/products" component={Products} />
             <Route path="/posts" component={Posts} />
             <Route path="/admin" component={Dashboard} />
-            <Route path="/" component={Home} />
           </Switch>
         </div>
       </div>
