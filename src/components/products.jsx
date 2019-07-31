@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import ProductDetails from "./productDetails";
+import { Link, Switch, Route } from "react-router-dom";
 
 class Products extends Component {
   state = {
