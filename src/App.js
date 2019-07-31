@@ -19,6 +19,7 @@ class App extends Component {
             {/* when using Switch, the order of the routes matters (specific ->
             generic) */}
             <Route exact path="/" component={Home} />
+            <Route path="/products/:id" component={ProductDetails} />
             <Route
               path="/products"
               render={props => <Products sortBy="newest" {...props} />}
