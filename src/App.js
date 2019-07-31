@@ -24,7 +24,7 @@ class App extends Component {
               path="/products"
               render={props => <Products sortBy="newest" {...props} />}
             />
-            <Route path="/posts" component={Posts} />
+            <Route path="/posts/:year/:month" component={Posts} />
             <Route path="/admin" component={Dashboard} />
           </Switch>
         </div>
